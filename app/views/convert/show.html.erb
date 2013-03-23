@@ -1,0 +1,13 @@
+<h1>Convert#show</h1>
+<p>Find me in app/views/convert/show.html.erb</p>
+<p><%= @abc %></p>
+<p>
+<% @doc.xpath('//TRADE_PLEDGE_INPUT/TAGS/TAG').each do |t| %>
+	<%= t['NAME'] -%>,&nbsp;
+<% end %>
+</p>
+<p>
+<% @doc.xpath('//TRADE_PLEDGE_INPUT/TAGS/TAG').each do |t| %>
+	<%= t.text -%>,&nbsp;
+<% end %>
+</p>

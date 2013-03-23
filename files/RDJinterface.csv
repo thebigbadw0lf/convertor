@@ -1,0 +1,50 @@
+S_SO;Source = identification of the product factory;A;4;0
+S_PRO;Product identification;A;4;4
+S_SUPRO;Subproduct identification;A;3;8
+S_EVENT;Event indicator;A;3;11
+S_SEND_CDE;Identification of the technical platform of the sending PF;A;3;14
+S_REC_CDE;Identification of the technical platform of the receiving platform.;A;3;17
+S_MSGID;serial number : has to be unique within one source;A;50;20
+S_USERID;name of the application - name of the program;A;8;70
+S_RELEASE;Number of the release of the input structure;N;3;78
+S_TRACE;Date and time stamp : to be used by the AG itself;A;25;81
+S_APPLDTE;Date of the rules to be applied;N;8;106
+S_OPERCDE;"Operation code (I : insert ; D : delete)";A;1;114
+S_REVCDE;"Reversal code: 0 = Initial ; 2 = Reversal";N;1;115
+S_ISSUE;To be used by the AG itself when re-issueing an input event : e.g. deadlocks;N;3;116
+S_AGGR;Aggregation code : only to be used in batch version;A;1;119
+S_BALANCE;Balance check : only to be used in batch version;N;1;120
+S_GRPMNG;Group management : only to be used in batch version;A;10;121
+S_PHARCY;Phase recycling : only to be used in batch version;A;10;131
+S_SEGTYP;Segment type name : only to be used in batch version;A;14;141
+S_INSTCDE;Instance code;A;10;155
+S_FILLER;Filler;A;20;165
+S_COCOMP;Registrating company;A;4;185
+S_RCIFR;Registrating department;N;7;189
+S_CNT;Counterpart of the transaction (= initial counterpart of the deal);N;7;196
+S_REFDEAL;Reference of the transaction;A;26;203
+S_REFPREV;Reference of the previous transaction;A;26;229
+S_REFINIT;Initial reference when connecting one PF to another;A;26;255
+S_REFCOMB;Reference of the combined transaction;A;26;281
+S_REF_APPL;"Reference of the deal; as known in the application where the deal is concluded in (<> source)";A;26;307
+S_EV_INI;Initial event indicator;A;3;333
+S_FEETYPE;"Indication of type of fee under the event type ""fees""";A;2;336
+S_CUR_REC;"Currency of the nominal amount to receive; expressed in ISO3";A;3;338
+S_CUR_DEL;Currency of the nominal amount to deliver expressed in ISO3;A;3;341
+S_CUR_SET;"Currency of the cash flow transaction; expressed in ISO3";A;3;344
+S_AMT_REC;Nominal amount asset (to receive);N;15;347
+S_AMT_DEL;Nominal amount liability (to deliver);N;15;362
+S_AMT_SET;Settlement amount;N;15;377
+S_SIGN;"Sign of the transaction: B = Buy ; S = Sell";A;4;392
+S_SIGN_OPT;"Sign of the option transaction: P = Put ; C = Call";A;4;396
+S_DATTRADE;"Trade date (trade date deal; date of generation payment)";N;8;400
+S_DATSTART;Start date;N;8;408
+S_DATSET;Settlement date;N;8;416
+S_DATEVENT;Event date;N;8;424
+S_DATMAT;Maturity date;N;8;432
+S_IDAPPL;Application that identifies the kind of identification.;A;4;440
+S_IDTYPE;"Type of identification : ISIN; MT SWIFT; FIS ...";A;6;444
+S_IDNR;"Identification number ; description ...";A;50;450
+S_MED1;Details of statement 1;A;34;500
+S_MED2;Details of statement 2;A;34;534
+S_MISC;Miscellaneous : free field;A;50;568

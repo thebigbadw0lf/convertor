@@ -1,0 +1,2014 @@
+20130102 00:05:02 WARNING LaunchApi> DEPRECATED LaunchApi call: Please modify /prod/sophis/lib/ActiveBatch/runTradeFeed.py to use LaunchModule method
+20130102 00:05:02 INFO  ModuleLauncher> Setting up params with already parsed args
+20130102 00:05:02 INFO  Util.kbclog> setLevel : LaunchApi, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : dbConfig, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : ConfigFileReader.py, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : Runner, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : ConfigFileUpdater.py, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : TradeFeed, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : ConfigManager.py, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : ModuleBase, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : ModuleLauncher, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : Installer, INFO
+20130102 00:05:02 INFO  Util.kbclog> setLevel : Util.kbclog, INFO
+20130102 00:05:02 INFO  ConfigManager.py> Module Configuration:
+20130102 00:05:02 INFO  ConfigManager.py> [              module] : TradeFeed
+20130102 00:05:02 INFO  ConfigManager.py> [               level] : prod
+20130102 00:05:02 INFO  ConfigManager.py> [             verbose] : False
+20130102 00:05:02 INFO  ConfigManager.py> [                 bin] : SophisTradeFeed.py
+20130102 00:05:02 INFO  ConfigManager.py> [               drive] : 
+20130102 00:05:02 INFO  ConfigManager.py> [                root] : lib/scripts/prod
+20130102 00:05:02 INFO  ConfigManager.py> [             release] : 451119
+20130102 00:05:02 INFO  ConfigManager.py> [                node] : 
+20130102 00:05:02 INFO  ConfigManager.py> [            practice] : False
+20130102 00:05:02 INFO  ConfigManager.py> [              killAt] : 20130102-23:00:00
+20130102 00:05:02 INFO  ConfigManager.py> [ terminateReturnCode] : 0
+20130102 00:05:02 INFO  ConfigManager.py> [                base] : /prod/sophis/lib/python2.5/SophisConfig/../../..
+20130102 00:05:02 INFO  ConfigManager.py> [                exit] : False
+20130102 00:05:02 INFO  ConfigManager.py> 
+20130102 00:05:02 INFO  Runner> CFG file - run:   /prod/sophis/lib/python2.5/Installer/../../../etc/script-run-unix.cfg
+20130102 00:05:02 INFO  Runner> CFG file - names: /prod/sophis/lib/python2.5/Installer/../../../etc/script-names-unix.cfg
+20130102 00:05:02 INFO  Runner> Define : LOG             -> INFO
+20130102 00:05:02 INFO  Runner> Define : ORACLE_HOME     -> /usr/local/oracle
+20130102 00:05:02 INFO  Runner> Define : PYTHONPATH      -> /prod/sophis/lib/python2.5/SophisConfig/../../../lib/scripts/prod:/prod/sophis/lib/python2.5/SophisConfig/../../../lib/python2.5:/prod/sophis/lib/python2.5/SophisConfig/../../../lib:/prod/sophis/lib/python2.5/SophisConfig/../../../../fotech/lib/python2.4
+20130102 00:05:02 INFO  Runner> Define : SYBASE          -> /usr/local/sybase
+20130102 00:05:02 INFO  Runner> Define : SYBASE_OCS      -> OCS
+20130102 00:05:02 INFO  Runner> Define : LD_LIBRARY_PATH -> /prod/ftshared/datatech:/prod/ftshared/datatech/lib/solaris:/prod/ftshared/datatech/reuters_ejv/lib:/usr/local/sybase/lib:/usr/local/deshaw/lib:/usr/local/oracle/lib
+20130102 00:05:02 INFO  Runner> Path: inserting the following
+/usr/bin
+/usr/local/bin
+/usr/local/sbin
+/bin
+/usr/local/gnu/bin
+/usr/local/pkgs/tibrv-7.2/bin
+/prod/sophis/bin
+/prod/deriv/bin/utils
+/usr/local/X/bin
+20130102 00:05:02 INFO  Runner> Working directory : /prod/sophis/lib/python2.5/SophisConfig/../../../lib/scripts/prod/TradeFeed
+20130102 00:05:02 INFO  Runner> 
+20130102 00:05:02 INFO  Runner> Batch commands to recreate environment:
+20130102 00:05:02 INFO  Runner> Running commands
+20130102 00:05:02 INFO  Runner> Run : /usr/local/bin/python /prod/sophis/lib/python2.5/SophisConfig/../../../lib/scripts/prod/TradeFeed/SophisTradeFeed.py --config=/prod/sophis/etc/trade_feed_prod.cfg
+20130102 00:05:02 INFO  Runner> Created pid 9339
+20130102 00:05:02 INFO  Runner> Monitoring process completion
+20130102 00:05:02 INFO  Runner> Process will be killed at : 20130102-23:00:00
+20130102 00:05:06 INFO  GenericTradeFeed.ProcessOptions> Using configfile /prod/sophis/etc/trade_feed_prod.cfg
+20130102 00:05:06 INFO  DB.Log> FIND sophis:prod:write:london.bridge:soprun
+20130102 00:05:06 INFO  DB.SOPHIS1.LONDON.RISK_API.1> CONN OPEN risk_api@sophis1.london
+20130102 00:05:06 INFO  GenericTradeFeed.Trade> Reading fdenterprise mappings
+20130102 00:05:06 INFO  GenericTradeFeed.Trade> Done reading fdenterprise mappings
+20130102 00:05:06 INFO  SophisTrade> Reading sendCouponTypes
+20130102 00:05:06 INFO  SophisTrade> Done reading sendCouponTypes
+20130102 00:05:06 INFO  Util.dantequeue> Dante server = dante.london
+20130102 00:05:06 INFO  Util.dantequeue> Dante user   = fo_dante_prod_user
+20130102 00:05:06 INFO  Util.dantequeue> Dante agent  = fo_tradefeed_sophis
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> producerNamespace = prod.tradefeed.master.sophis
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> consumerNamespace = prod.tradefeed.master.sophis.reply
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> producerNamespace = prod.tradefeed.master.sophis
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> consumerNamespace = prod.tradefeed.master.sophis.reply
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> producerNamespace = prod.tradefeed.master.sophis
+20130102 00:05:06 INFO  GenericTradeFeed.TradeFeed> consumerNamespace = prod.tradefeed.master.sophis.reply
+20130102 10:30:35 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:30:37 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:30:37 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406837
+20130102 10:30:37 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:30:37 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406837_2_83664015</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406837</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Edison</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Edison</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16745</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-2.64</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67865254</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>0</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67865254</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 103000</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">93948400030997</TAG>
+       <TAG NAME="Folio">Edison_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16745/24725/27775/30997</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406837</TAG>
+       <TAG NAME="FolioId">30997</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 10:30:37 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:30:37 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.077786 seconds
+20130102 10:31:07 INFO  GenericTradeFeed.TradeFeed> Trade 51406837, version 2 was accepted by the back office
+20130102 10:31:17 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:31:19 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:31:19 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406840
+20130102 10:31:19 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:31:19 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406840_2_96939236</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406840</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Edison</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16745</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>2.64</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBCINV-CITCO-EDISON</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 103035</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67622541</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">57546400027775</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">FD EDISON</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16745/24725/27775</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">N</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406840</TAG>
+       <TAG NAME="FolioId">27775</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBCINV-CITCO-EDISON</TAG>
+       <TAG NAME="DepotId">10008419</TAG>
+       <TAG NAME="Allotment">OPTION - OTC</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 10:31:19 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:31:19 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.027725 seconds
+20130102 10:31:39 INFO  GenericTradeFeed.TradeFeed> Trade 51406840, version 2 was accepted by the back office
+20130102 10:32:39 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:32:41 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:32:41 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406843
+20130102 10:32:41 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:32:41 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406843_2_69945224</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406843</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Stratos Fund LP</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16745</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>6.42</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBCINV-CITCO-STRATOS</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 103151</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67531705</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">39135800023659</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">FD STRATOS</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16745/24725/23659</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">N</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406843</TAG>
+       <TAG NAME="FolioId">23659</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBCINV-CITCO-STRATOS</TAG>
+       <TAG NAME="DepotId">10010334</TAG>
+       <TAG NAME="Allotment">OPTION - OTC</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 10:32:41 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:32:41 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.069197 seconds
+20130102 10:33:21 INFO  GenericTradeFeed.TradeFeed> Trade 51406843, version 2 was accepted by the back office
+20130102 10:42:12 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:42:13 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:42:13 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406846
+20130102 10:42:13 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:42:13 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406846_2_27759913</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406846</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>65.02</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67741105</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67741105</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 104126</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94086400033516</TAG>
+       <TAG NAME="Folio">FDI FD Bluecrest_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/33509/33516</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406846</TAG>
+       <TAG NAME="FolioId">33516</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 10:42:13 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:42:13 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.025537 seconds
+20130102 10:42:33 INFO  GenericTradeFeed.TradeFeed> Trade 51406846, version 2 was accepted by the back office
+20130102 10:43:23 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:43:25 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:43:25 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406849
+20130102 10:43:25 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:43:25 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406849_2_15502682</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406849</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>-65.02</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBCINV-JPM-BLUSAFF</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <EXCHANGE_RATES>
+      <PRICE TYPE="ER" MULT_DIV="DIV">
+        <NUMBER>1.0434955050</NUMBER>
+        <FROM_SECURITY>
+          <ID CLASS="Currency" TYPE="ISO">USD</ID>
+        </FROM_SECURITY>
+        <TO_CURRENCY>
+          <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+        </TO_CURRENCY>
+      </PRICE>
+    </EXCHANGE_RATES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 104216</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67865417</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">94102400036443</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">FDI FD Bluecrest - Int/Divs/Costs</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/33509/36443</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406849</TAG>
+       <TAG NAME="FolioId">36443</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBCINV-JPM-BLUSAFF</TAG>
+       <TAG NAME="DepotId">10013604</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 10:43:25 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:43:25 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.059016 seconds
+20130102 10:43:45 INFO  GenericTradeFeed.TradeFeed> Trade 51406849, version 2 was accepted by the back office
+20130102 10:49:56 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:49:57 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:49:57 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406852
+20130102 10:49:57 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:49:57 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406852_2_26835200</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406852</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Nedgroup Inv Prem Port</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Nedgroup Inv Prem Port</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-25</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67714426</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67714426</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 104924</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94687600032414</TAG>
+       <TAG NAME="Folio">Nedgroup Inv Port PLC_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/32411/32414</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406852</TAG>
+       <TAG NAME="FolioId">32414</TAG>
+       <TAG NAME="Operation">FEES</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 10:49:57 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:49:57 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.025376 seconds
+20130102 10:50:17 INFO  GenericTradeFeed.TradeFeed> Trade 51406852, version 2 was accepted by the back office
+20130102 10:58:18 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:58:20 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:58:20 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406855
+20130102 10:58:20 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:58:20 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406855_2_53115661</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406855</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-211220.98</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67741105</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67741105</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">AUD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20130104 105723</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20130104</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94086400033516</TAG>
+       <TAG NAME="Folio">FDI FD Bluecrest_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/33509/33516</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20130104</TAG>
+       <TAG NAME="Trade Id">51406855</TAG>
+       <TAG NAME="FolioId">33516</TAG>
+       <TAG NAME="Operation">CASH IN/OUT OF FUNDING ACCOUNT</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 10:58:20 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:58:20 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.032778 seconds
+20130102 10:59:00 INFO  GenericTradeFeed.TradeFeed> Trade 51406855, version 2 was accepted by the back office
+20130102 10:59:40 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 10:59:41 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 10:59:41 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406858
+20130102 10:59:41 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 10:59:41 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406858_2_36523522</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406858</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-56000</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67740693</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67740693</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20131231 105905</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20131231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94084400033516</TAG>
+       <TAG NAME="Folio">FDI FD Bluecrest_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/33509/33516</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20131231</TAG>
+       <TAG NAME="Trade Id">51406858</TAG>
+       <TAG NAME="FolioId">33516</TAG>
+       <TAG NAME="Operation">CASH IN/OUT OF FUNDING ACCOUNT</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 10:59:41 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 10:59:41 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.037362 seconds
+20130102 11:00:01 INFO  GenericTradeFeed.TradeFeed> Trade 51406858, version 2 was accepted by the back office
+20130102 11:02:52 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:02:53 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 11:02:53 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406861
+20130102 11:02:53 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:02:53 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406861_2_27801335</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406861</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Apple</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Apple</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">24484</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-422</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67666108</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67666108</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20131231 110158</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20131231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">69581900030092</TAG>
+       <TAG NAME="Folio">FD APPLE_CASH</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/24484/26116/30092</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20131231</TAG>
+       <TAG NAME="Trade Id">51406861</TAG>
+       <TAG NAME="FolioId">30092</TAG>
+       <TAG NAME="Operation">CASH IN/OUT OF FUNDING ACCOUNT</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 11:02:53 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:02:53 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.036833 seconds
+20130102 11:03:13 INFO  GenericTradeFeed.TradeFeed> Trade 51406861, version 2 was accepted by the back office
+20130102 11:05:24 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:05:25 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 11:05:25 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406864
+20130102 11:05:25 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:05:25 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406864_2_91377851</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406864</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Nedgroup Inv Prem Port</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>25</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBCINV-FORTIS-NEDPP-P</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 110425</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67866045</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">94696500036683</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">Nedgroup - Int/Divs/Costs</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/32411/36683</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406864</TAG>
+       <TAG NAME="FolioId">36683</TAG>
+       <TAG NAME="Operation">FEES</TAG>
+       <TAG NAME="DepotAccount">KBCINV-FORTIS-NEDPP-P</TAG>
+       <TAG NAME="DepotId">10014501</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 11:05:25 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:05:25 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.026159 seconds
+20130102 11:05:35 INFO  GenericTradeFeed.TradeFeed> Trade 51406864, version 2 was rejected by the back office with error 28 : [MoTech] A SecurityInMarket reference from the front office with value 67866045 cannot be mapped to a backoffice value because there is not precisely one smid (there are 0) with this value as an attribute in fdenteprise (attribute type 670 (SICOVAM of security (Sophis)))
+20130102 11:11:46 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:11:47 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 11:11:47 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406867
+20130102 11:11:47 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:11:47 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406867_2_83961244</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406867</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">KBC-INV</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>2</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">EUR</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">CITDUB-SELF-CUST</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <EXCHANGE_RATES>
+      <PRICE TYPE="ER" MULT_DIV="DIV">
+        <NUMBER>1.3220518244</NUMBER>
+        <FROM_SECURITY>
+          <ID CLASS="Currency" TYPE="ISO">USD</ID>
+        </FROM_SECURITY>
+        <TO_CURRENCY>
+          <ID CLASS="Currency" TYPE="ISO">EUR</ID>
+        </TO_CURRENCY>
+      </PRICE>
+    </EXCHANGE_RATES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 111050</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67864747</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">93722200036543</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">KBCI - Interest, Dividends &amp; Costs</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/36543</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406867</TAG>
+       <TAG NAME="FolioId">36543</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">CITDUB-SELF-CUST</TAG>
+       <TAG NAME="DepotId">10015762</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 11:11:47 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:11:47 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.029510 seconds
+20130102 11:12:27 INFO  GenericTradeFeed.TradeFeed> Trade 51406867, version 2 was accepted by the back office
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Ignoring cancel and cancelling any existing contract for trade 51406617 0 0.0
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Cancelling contract SOP51406617, version 4, entity 10000221
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_STRUCTURED_FUND SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_STRUCTURED_FUND ACTION="CANCEL">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406617_4_30599488</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_STRUCTURED_FUND_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406617</ID>
+    </CONTRACT_REF>
+         <COMPANY>
+           <ID CLASS="Organization" TYPE="PRIMARY">10000221</ID>
+         </COMPANY>
+    <TAGS>
+       <TAG NAME="Trade Id">51406617</TAG>
+       <TAG NAME="Trade Version">4</TAG>
+    </TAGS>
+  </TRADE_STRUCTURED_FUND_INPUT>
+</TRADE_STRUCTURED_FUND>
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:15:18 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.039303 seconds
+20130102 11:15:48 INFO  GenericTradeFeed.TradeFeed> Trade 51406617, version 4 was accepted by the back office
+20130102 11:15:48 INFO  GenericTradeFeed.TradeFeed> Trade 51406864, version 2 was accepted by the back office
+20130102 11:16:08 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:16:09 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 11:16:09 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51396896
+20130102 11:16:09 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:16:09 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_STRUCTURED_FUND SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_STRUCTURED_FUND ACTION="AMEND">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51396896_6_45244485</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_STRUCTURED_FUND_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51396896</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Strategic SR II LP</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Strategic SR II LP</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">33477</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-662728</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67738234</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>0</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67738234</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBCCAY-CITCOCUR-SSR2</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121121 110719</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121121</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">79732400028737</TAG>
+       <TAG NAME="Folio">FD SSR II_Settled</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/33477/28732/28737</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121121</TAG>
+       <TAG NAME="Trade Id">51396896</TAG>
+       <TAG NAME="FrontOfficeComment">amended from -662,728 as red received</TAG>
+       <TAG NAME="FolioId">28737</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="DepotAccount">KBCCAY-CITCOCUR-SSR2</TAG>
+       <TAG NAME="DepotId">10012517</TAG>
+       <TAG NAME="Trade Version">6</TAG>
+    </TAGS>
+  </TRADE_STRUCTURED_FUND_INPUT>
+</TRADE_STRUCTURED_FUND>
+20130102 11:16:09 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:16:09 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.049322 seconds
+20130102 11:17:00 INFO  GenericTradeFeed.TradeFeed> Trade 51396896, version 6 was accepted by the back office
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Ignoring cancel and cancelling any existing contract for trade 51397648 0 0.0
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Cancelling contract SOP51397648, version 2, entity 10000221
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="CANCEL">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51397648_2_62434675</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51397648</ID>
+    </CONTRACT_REF>
+         <COMPANY>
+           <ID CLASS="Organization" TYPE="PRIMARY">10000221</ID>
+         </COMPANY>
+    <TAGS>
+       <TAG NAME="Trade Id">51397648</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 11:19:50 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.042200 seconds
+20130102 11:20:10 INFO  GenericTradeFeed.TradeFeed> Trade 51397648, version 2 was accepted by the back office
+20130102 13:09:01 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 13:09:02 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 13:09:02 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406726
+20130102 13:09:02 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 13:09:02 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_SOPHIS_BUSINESS_EVENT SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_SOPHIS_BUSINESS_EVENT ACTION="AMEND">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406726_12_99361359</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406726</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Stillwater Matrix</ID>
+    </COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16809</ID>
+    </BOOK>
+    <QUANTITIES>
+      <QUANTITY TYPE="CashAmount">
+        <NUMBER>-5561.929999999999</NUMBER>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">Physical</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <EXCHANGE_RATES>
+      <PRICE TYPE="ER" MULT_DIV="DIV">
+        <NUMBER>0.7536073299</NUMBER>
+        <FROM_SECURITY>
+          <ID CLASS="Currency" TYPE="ISO">EUR</ID>
+        </FROM_SECURITY>
+        <TO_CURRENCY>
+          <ID CLASS="Currency" TYPE="ISO">USD</ID>
+        </TO_CURRENCY>
+      </PRICE>
+    </EXCHANGE_RATES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121221 161345</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121221</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">maynardn3</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <PRIMARY_SECURITY>
+      <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67864740</ID>
+    </PRIMARY_SECURITY>
+    <TAGS>
+       <TAG NAME="PositionId">93720200021995</TAG>
+       <TAG NAME="SophisEventType">FDCOMM</TAG>
+       <TAG NAME="Folio">January 04 CPPI</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16809/22297/17069/21995</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">440</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121221</TAG>
+       <TAG NAME="Trade Id">51406726</TAG>
+       <TAG NAME="FolioId">21995</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="DepotAccount">Physical</TAG>
+       <TAG NAME="DepotId">10008843</TAG>
+       <TAG NAME="Trade Version">12</TAG>
+    </TAGS>
+  </TRADE_SOPHIS_BUSINESS_EVENT_INPUT>
+</TRADE_SOPHIS_BUSINESS_EVENT>
+20130102 13:09:02 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 13:09:02 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.036501 seconds
+20130102 13:09:22 INFO  GenericTradeFeed.TradeFeed> Trade 51406726, version 12 was accepted by the back office
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Ignoring cancel and cancelling any existing contract for trade 51402049 0 0.0
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Cancelling contract SOP51402049, version 2, entity 10008153
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="CANCEL">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51402049_2_66310828</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51402049</ID>
+    </CONTRACT_REF>
+         <COMPANY>
+           <ID CLASS="Organization" TYPE="PRIMARY">10008153</ID>
+         </COMPANY>
+    <TAGS>
+       <TAG NAME="Trade Id">51402049</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 13:46:56 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.039241 seconds
+20130102 13:47:16 INFO  GenericTradeFeed.TradeFeed> Trade 51402049, version 2 was accepted by the back office
+20130102 14:28:40 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 14:28:41 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 14:28:41 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406861
+20130102 14:28:41 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 14:28:41 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="AMEND">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406861_4_92556173</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406861</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Apple</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Apple</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">24484</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-422</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67666108</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67666108</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 110158</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">69581900030092</TAG>
+       <TAG NAME="Folio">FD APPLE_CASH</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/24484/26116/30092</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406861</TAG>
+       <TAG NAME="FolioId">30092</TAG>
+       <TAG NAME="Operation">CASH IN/OUT OF FUNDING ACCOUNT</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">4</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 14:28:41 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 14:28:41 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.028261 seconds
+20130102 14:29:21 INFO  GenericTradeFeed.TradeFeed> Trade 51406861, version 4 was accepted by the back office
+20130102 14:29:42 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 14:29:43 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 14:29:43 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406858
+20130102 14:29:43 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 14:29:43 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="AMEND">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406858_4_66396580</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406858</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">BlueCrest Spec AFF</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-56000</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67740693</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67740693</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 105905</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">coxmic1</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94084400033516</TAG>
+       <TAG NAME="Folio">FDI FD Bluecrest_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/33509/33516</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406858</TAG>
+       <TAG NAME="FolioId">33516</TAG>
+       <TAG NAME="Operation">CASH IN/OUT OF FUNDING ACCOUNT</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">4</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 14:29:43 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 14:29:43 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.032826 seconds
+20130102 14:29:53 INFO  GenericTradeFeed.TradeFeed> Trade 51406858, version 4 was accepted by the back office
+20130102 15:05:57 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 15:05:58 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 15:05:58 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406881
+20130102 15:05:58 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 15:05:58 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406881_2_35929243</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406881</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Eden Rock Finance Maste</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Eden Rock Finance Maste</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16745</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>173411.47</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67685407</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67685407</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121224 150446</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121224</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">69346700030996</TAG>
+       <TAG NAME="Folio">FD ER FINANCE FD_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16745/24725/23303/30996</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121230</TAG>
+       <TAG NAME="Trade Id">51406881</TAG>
+       <TAG NAME="FolioId">30996</TAG>
+       <TAG NAME="Operation">REDEMPTION (NUM OF SHARES)</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 15:05:58 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 15:05:58 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.033357 seconds
+20130102 15:06:28 INFO  GenericTradeFeed.TradeFeed> Trade 51406881, version 2 was accepted by the back office
+20130102 15:15:49 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 15:15:51 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 15:15:51 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406884
+20130102 15:15:51 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 15:15:51 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406884_2_95025264</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406884</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Sky Bell Offshore</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Sky Bell Offshore</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36183</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-6378.55</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67686774</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67686774</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121218 151502</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121218</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">93921000031075</TAG>
+       <TAG NAME="Folio">FD SKY BELL_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/36183/29312/31075</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121218</TAG>
+       <TAG NAME="Trade Id">51406884</TAG>
+       <TAG NAME="FolioId">31075</TAG>
+       <TAG NAME="Operation">FEES</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 15:15:51 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 15:15:51 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.024805 seconds
+20130102 15:16:21 INFO  GenericTradeFeed.TradeFeed> Trade 51406884, version 2 was accepted by the back office
+20130102 15:25:42 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 15:25:43 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 15:25:43 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406887
+20130102 15:25:43 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 15:25:43 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_PLEDGE SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406887_2_95344360</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406887</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Strategic Stable Ret Fd</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Strategic Stable Ret Fd</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">33477</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-6400</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67688284</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67688284</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121127 152452</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121127</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">69731300031169</TAG>
+       <TAG NAME="Folio">FD SSR_Cash Pledged</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/33477/27296/27866/31169</TAG>
+       <TAG NAME="TradeMultiplier">0.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121127</TAG>
+       <TAG NAME="Trade Id">51406887</TAG>
+       <TAG NAME="FolioId">31169</TAG>
+       <TAG NAME="Operation">FEES</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
+20130102 15:25:43 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 15:25:43 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.033978 seconds
+20130102 15:26:03 INFO  GenericTradeFeed.TradeFeed> Trade 51406887, version 2 was accepted by the back office
+20130102 16:37:00 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 16:37:02 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 16:37:02 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406890
+20130102 16:37:02 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 16:37:02 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_STRUCTURED_FUND SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_STRUCTURED_FUND ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406890_2_58486638</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_STRUCTURED_FUND_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406890</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Agile SVF LP</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Agile SVF LP</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36043</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-7409</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67651755</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67651755</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">CITCUR-SELF-CUST</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121130 163615</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121130</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94366400027081</TAG>
+       <TAG NAME="Folio">FD AGILE SVF_Settled</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/36043/27075/27081</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121130</TAG>
+       <TAG NAME="Trade Id">51406890</TAG>
+       <TAG NAME="FolioId">27081</TAG>
+       <TAG NAME="Operation">LP ADJUSTMENTS</TAG>
+       <TAG NAME="DepotAccount">CITCUR-SELF-CUST</TAG>
+       <TAG NAME="DepotId">10015703</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_STRUCTURED_FUND_INPUT>
+</TRADE_STRUCTURED_FUND>
+20130102 16:37:02 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 16:37:02 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.036469 seconds
+20130102 16:37:22 INFO  GenericTradeFeed.TradeFeed> Trade 51406890, version 2 was accepted by the back office
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Ignoring cancel and cancelling any existing contract for trade 51406890 0 0.0
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Cancelling contract SOP51406890, version 2, entity 10000221
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_STRUCTURED_FUND SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_STRUCTURED_FUND ACTION="CANCEL">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406890_2_31307770</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_STRUCTURED_FUND_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406890</ID>
+    </CONTRACT_REF>
+         <COMPANY>
+           <ID CLASS="Organization" TYPE="PRIMARY">10000221</ID>
+         </COMPANY>
+    <TAGS>
+       <TAG NAME="Trade Id">51406890</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_STRUCTURED_FUND_INPUT>
+</TRADE_STRUCTURED_FUND>
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 16:38:02 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.027741 seconds
+20130102 16:38:22 INFO  GenericTradeFeed.TradeFeed> Trade 51406890, version 2 was accepted by the back office
+20130102 16:38:42 INFO  GenericTradeFeed.TradeFeed> Got 1 trades
+20130102 16:38:43 INFO  SophisTrade> xrate adjusted by quotity ratio 1.0
+20130102 16:38:43 INFO  GenericTradeFeed.TradeFeed> Feeding trade 51406894
+20130102 16:38:43 INFO  GenericTradeFeed.TradeFeed> Report trade here:
+20130102 16:38:43 INFO  GenericTradeFeed.TradeFeed> <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TRADE_STRUCTURED_FUND SYSTEM "http://inferno:8080/prod/dtd/pipeline.dtd">
+<TRADE_STRUCTURED_FUND ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406894_2_77136888</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_STRUCTURED_FUND_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406894</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10000221</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Agile SVF LP</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Agile SVF LP</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">36043</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-336</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67805652</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>1</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67805652</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">CITCUR-SELF-CUST</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20120130 163814</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20120130</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">94362400027081</TAG>
+       <TAG NAME="Folio">FD AGILE SVF_Settled</TAG>
+       <TAG NAME="FolioPath">/1/21759/21760/36043/27075/27081</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">False</TAG>
+       <TAG NAME="NavDate">20121130</TAG>
+       <TAG NAME="Trade Id">51406894</TAG>
+       <TAG NAME="FolioId">27081</TAG>
+       <TAG NAME="Operation">LP ADJUSTMENTS</TAG>
+       <TAG NAME="DepotAccount">CITCUR-SELF-CUST</TAG>
+       <TAG NAME="DepotId">10015703</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_STRUCTURED_FUND_INPUT>
+</TRADE_STRUCTURED_FUND>
+20130102 16:38:43 INFO  GenericTradeFeed.TradeFeed> Sending to namespace prod.tradefeed.master.sophis
+20130102 16:38:43 INFO  GenericTradeFeed.TradeFeed> Dante commit took 0.043846 seconds
+20130102 16:38:53 INFO  GenericTradeFeed.TradeFeed> Trade 51406894, version 2 was accepted by the back office
+20130102 23:00:06 WARNING Runner> Killing process 9339 with [u'/prod/fotech/bin/kill.py', u'--pid=9339']
+20130102 23:00:08 INFO  __main__> Killing 9339
+20130102 23:00:08 INFO  ModuleLauncher> Ran module. Returned: 0
+20130102 23:00:08 INFO  TradeFeed> Exit code was 0
+{'bin': 'SophisTradeFeed.py', 'killAt': '20130102-23:00:00', 'verbose': False, 'level': 'prod', 'practice': False, 'drive': '', 'terminateReturnCode': 0, 'root': 'lib/scripts/prod'}
+
+cd /prod/sophis/lib/scripts/prod/TradeFeed
+set ABAT_CHECKPOINT=NO
+set ABAT_CHECKPOINTTIME=
+set ABAT_CHECKPOINTVAL=
+set ABAT_CID=ABLN1;fosx5.london.bridge.local;
+set ABAT_CLIENTMACHINE=TIBURON
+set ABAT_EMGRPORT=3655
+set ABAT_INSTALLPATH=/var/systems/activebatch
+set ABAT_JOBFILE=/prod/sophis/bin/runPython
+set ABAT_JOBID=833927
+set ABAT_JOBMODE=NORMAL
+set ABAT_JOBNAME=Trade Feed (prod)
+set ABAT_JOBSCHED=ABLN1;fosx5.london.bridge.local;
+set ABAT_JOBSTEP=MAIN
+set ABAT_QUEUE=fosx5.london.bridge.local
+set ABAT_RESTART=NO
+set ABAT_SUBMITTIME=2013-01-02T00:05:00
+set ABAT_SUBMITUSER=BRIDGE\dehondf_admin
+set ABAT_SuccessCodeRuleFileName=
+set HOME=/u/soprun
+set KBCSITENAME=london
+set LD_LIBRARY_PATH=/prod/ftshared/datatech:/prod/ftshared/datatech/lib/solaris:/prod/ftshared/datatech/reuters_ejv/lib:/usr/local/sybase/lib:/usr/local/deshaw/lib:/usr/local/oracle/lib
+set LOG=INFO
+set ORACLE_HOME=/usr/local/oracle
+set PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:/bin:/usr/local/gnu/bin:/usr/local/pkgs/tibrv-7.2/bin:/prod/sophis/bin:/prod/deriv/bin/utils:/usr/local/X/bin:/usr/gnu/bin:/usr/local/bin:/bin:/usr/bin:.:/prod/feeds/bin:/usr/bin
+set PWD=/u/soprun
+set PYTHONPATH=/prod/sophis/lib/python2.5/SophisConfig/../../../lib/scripts/prod:/prod/sophis/lib/python2.5/SophisConfig/../../../lib/python2.5:/prod/sophis/lib/python2.5/SophisConfig/../../../lib:/prod/sophis/lib/python2.5/SophisConfig/../../../../fotech/lib/python2.4
+set SHLVL=1
+set SYBASE=/usr/local/sybase
+set SYBASE_OCS=OCS
+set USERDOMAIN=bridge
+set _=/usr/local/bin/python
+
+****************************************************
+*         J O B     S T A T I S T I C S            *
+*                                                  *
+*          ActiveBatch (r) Version 6               *
+*     The Enterprise Job Scheduling System         *
+*                Engineered By                     *
+*       Advanced Systems Concepts Inc              *
+*          http://www.advsyscon.com                *
+****************************************************
+
+Job Id               : 833927
+Job Name             : Trade Feed (prod)
+Command Line         : /prod/sophis/bin/runPython /prod/sophis/lib/ActiveBatch/runTradeFeed.py -c /prod/sophis/etc/trade_feed_prod.cfg --level=prod --killAt=20130102-23:00:00 
+Working Directory    : /u/soprun
+Client Machine       : TIBURON
+Submitted by         : 
+Submitted to Generic Queue   : fosx5.london.bridge.local
+Execution Queue      : Sophis Unix All Boxes Bridge
+Submission Time      : 02-Jan-2013 00:05:00 (JSS Time)
+
+Job Start Time       : 02-Jan-2013 00:04:59
+Execution User       : soprun
+Execution Queue      : fosx5.london.bridge.local
+Execution Machine    : fosx5.london.bridge.local
+Job Scheduler        : ABLN1
+
+Job Completed at     : 02-Jan-2013 23:00:09
+Elapsed Time         :      0 22:55:09.898
+CPU Time             :      0 00:00:18.180
+Completion Status    : 0 (0x0)
+                     :  (Error 0)
+----------
+  Note: except where specifically noted, all times  
+        are based on the Execution Agent Machine.   
+
+*********************End of Log*********************

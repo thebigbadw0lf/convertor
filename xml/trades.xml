@@ -1,0 +1,81 @@
+<TRADE_PLEDGE ACTION="NEW">
+  <MSG_ID>
+    <NAMESPACE>SOPHIS_FEED</NAMESPACE>
+    <EXTERNAL_ID>51406837_2_83664015</EXTERNAL_ID>
+  </MSG_ID>
+  <TRADE_PLEDGE_INPUT>
+    <CONTRACT_REF>
+      <ID CLASS="ContractRef" TYPE="PRIMARY">SOP51406837</ID>
+    </CONTRACT_REF>
+    <COMPANY>
+      <ID CLASS="Organization" TYPE="SOPHIS">10008153</ID>
+    </COMPANY>
+    <COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Edison</ID>
+    </COUNTERPARTY>
+    <RISK_COUNTERPARTY>
+      <ID CLASS="Account" TYPE="SOPHIS">Edison</ID>
+    </RISK_COUNTERPARTY>
+    <BOOK>
+      <ID CLASS="Book" TYPE="SOPHIS">16745</ID>
+    </BOOK>
+    <SETTLEMENT_CURRENCY>
+      <ID CLASS="Currency" TYPE="ISO">USD</ID>
+    </SETTLEMENT_CURRENCY>
+    <QUANTITIES>
+      <QUANTITY TYPE="NumberOfUnits">
+        <NUMBER>-2.64</NUMBER>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67865254</ID>
+      </QUANTITY>
+    </QUANTITIES>
+    <PRICE TYPE="UC" MULT_DIV="MULT">
+      <NUMBER>0</NUMBER>
+      <FROM_SECURITY>
+        <ID CLASS="SecurityInMarket" TYPE="SOPHIS">67865254</ID>
+      </FROM_SECURITY>
+      <TO_CURRENCY>
+        <ID CLASS="Currency" TYPE="ISO">USD</ID>
+      </TO_CURRENCY>
+    </PRICE>
+    <SETTLEMENT_ACCOUNT_NAMES>
+      <SETTLEMENT_ACCOUNT_NAME TYPE="Main">
+        <ID CLASS="SettlementAccountName" TYPE="SOPHIS">KBC- Cash</ID>
+      </SETTLEMENT_ACCOUNT_NAME>
+    </SETTLEMENT_ACCOUNT_NAMES>
+    <TRADE_DATE>
+      <DATETIME TZ="GB-Eire">20121231 103000</DATETIME>
+    </TRADE_DATE>
+    <VALUE_DATE>
+      <DATETIME>20121231</DATETIME>
+    </VALUE_DATE>
+    <PEOPLE>
+      <TRADER>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </TRADER>
+      <SALESPERSON>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </SALESPERSON>
+      <USER_ENTERED>
+        <ID CLASS="User" TYPE="SOPHIS">crummacs</ID>
+      </USER_ENTERED>
+    </PEOPLE>
+    <TAGS>
+       <TAG NAME="PositionId">93948400030997</TAG>
+       <TAG NAME="Folio">Edison_Cash</TAG>
+       <TAG NAME="FolioPath">/1/16706/18290/16745/24725/27775/30997</TAG>
+       <TAG NAME="TradeMultiplier">1.0</TAG>
+       <TAG NAME="TypeSico">0</TAG>
+       <TAG NAME="Security Type">A</TAG>
+       <TAG NAME="BusinessEvent">1</TAG>
+       <TAG NAME="IsPledge">True</TAG>
+       <TAG NAME="NavDate">20121231</TAG>
+       <TAG NAME="Trade Id">51406837</TAG>
+       <TAG NAME="FolioId">30997</TAG>
+       <TAG NAME="Operation">INTEREST</TAG>
+       <TAG NAME="DepotAccount">KBC- Cash</TAG>
+       <TAG NAME="DepotId">10013358</TAG>
+       <TAG NAME="Allotment">FUND OF FUNDS</TAG>
+       <TAG NAME="Trade Version">2</TAG>
+    </TAGS>
+  </TRADE_PLEDGE_INPUT>
+</TRADE_PLEDGE>
